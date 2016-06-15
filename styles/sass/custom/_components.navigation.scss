@@ -1,0 +1,58 @@
+/*------------------------------------*\
+    #NAVIGATION
+\*------------------------------------*/
+
+.nav-bar--main {
+    background-color: $lions-dark-grey;
+}
+
+.nav-bar--secondary {
+    background-color: $lions-yellow;
+}
+
+.site-nav {
+    font-size: 0; // -> Strips whitespace between inline-block elements
+}
+
+.site-nav__item {
+    font-size: $inuit-base-font-size; // -> Resets font-size to default set in _vars.scss
+}
+
+.site-nav__link:link,
+.site-nav__link:visited {
+    display: block;
+    padding: $inuit-base-spacing-unit--small;
+    text-decoration: none;
+}
+
+.nav-bar--main { 
+    .site-nav__link:link,
+    .site-nav__link:visited {
+        color: lighten($lions-yellow, 5%);
+    }
+    .site-nav__link:hover,
+    .site-nav__link:focus {
+        background-color: lighten($lions-dark-grey, 5%);
+    }
+
+    .site-nav__link.active {
+        background-color: $lions-yellow;
+        color: $lions-dark-grey;
+    }
+}
+
+.nav-bar--secondary {
+    .site-nav__link:link,
+    .site-nav__link:visited {
+        color: lighten($lions-dark-grey, 5%);
+    }
+    .site-nav__link:hover,
+    .site-nav__link:focus {
+        background-color: lighten($lions-yellow, 5%);
+    }
+
+    .site-nav__link.active {
+        background-color: white;
+        color: $lions-dark-grey;
+    }
+}

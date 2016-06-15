@@ -1,0 +1,111 @@
+/**
+ * Import order:
+ *
+ * 1). Settings: Global variables, site-wide settings, config switches, etc.
+ * 2). Tools: Site-wide mixins and functions.
+ * 3). Generic: Low-specificity, far-reaching rulesets (e.g. resets).
+ * 4). Base: Unclassed HTML elements (e.g. a {}, blockquote {}, address {}).
+ * 5). Objects: Objects, abstractions, and design patterns (e.g. .media {}).
+ * 6). Components: Discrete, complete chunks of UI (e.g. .carousel {}). This is the one layer that inuitcss doesn’t get involved with.
+ * 7). Trumps: High-specificity, very explicit selectors. Overrides and helper classes (e.g. .hidden {}).
+ */
+
+// object.layout
+$inuit-layout-namespace: project-;
+$inuit-global-border-box: true;
+
+
+// enables layout gutter manipulation within object.layout
+$inuit-enable-layout--tiny:     true;
+$inuit-enable-layout--small:    true;
+$inuit-enable-layout--large:    true;
+$inuit-enable-layout--huge:     true;
+$inuit-enable-layout--flush:    true;
+$inuit-enable-layout--rev:      true;
+$inuit-enable-layout--middle:   true;
+$inuit-enable-layout--bottom:   true;
+$inuit-enable-layout--right:    true;
+$inuit-enable-layout--center:   true;
+$inuit-enable-layout--auto:     true;
+
+
+ ///*------------------------------------*\
+ //    #SETTINGS
+ //\*------------------------------------*/
+
+@import "settings.defaults";
+@import "settings.responsive";
+
+@import "custom/settings.vars";
+
+///*------------------------------------*\
+//    #TOOLS
+//\*------------------------------------*/
+
+@import "tools.functions";
+@import "tools.mixins";
+@import "tools.responsive";
+@import "tools.widths";
+
+///*------------------------------------*\
+//    #GENERIC
+//\*------------------------------------*/
+
+@import "generic.box-sizing";
+@import "generic.normalize";
+@import "generic.reset";
+@import "generic.shared";
+
+///*------------------------------------*\
+//    #BASE
+//\*------------------------------------*/
+
+@import "base.headings";
+@import "base.images";
+@import "base.lists";
+@import "base.page";
+@import "base.paragraphs";
+
+///*------------------------------------*\
+//    #OBJECTS
+//\*------------------------------------*/
+
+@import "objects.block";
+@import "objects.box";
+@import "objects.buttons";
+@import "objects.flag";
+@import "objects.layout";
+@import "objects.list-bare";
+@import "objects.list-block";
+@import "objects.list-inline";
+@import "objects.list-ui";
+@import "objects.media";
+@import "objects.pack";
+@import "objects.tables";
+@import "objects.tabs";
+
+@import "custom/container";
+
+///*------------------------------------*\
+//    #COMPONENTS
+//\*------------------------------------*/
+
+@import "custom/_components.typography";
+
+@import "custom/_components.header";
+@import "custom/_components.navigation";
+
+///*------------------------------------*\
+//    #TRUMPS
+//\*------------------------------------*/
+
+@import "trumps.clearfix";
+@import "trumps.headings";
+@import "trumps.print";
+@import "trumps.spacing-responsive";
+@import "trumps.spacing";
+@import "trumps.widths-responsive";
+@import "trumps.widths";
+
+@import "custom/trumps.helpers";
+
