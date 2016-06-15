@@ -7,3 +7,21 @@
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+.container--content-offset--top {
+    margin-top: $inuit-base-spacing-unit--large;
+}
+
+.container--content-offset--bottom {
+    margin-bottom: $inuit-base-spacing-unit--large;
+}
+
+.container--content-offset--both {
+    margin-top: $inuit-base-spacing-unit--large;
+    margin-bottom: $inuit-base-spacing-unit--large;
+}
+
+.container--content-pad--both {
+    padding-top: $inuit-base-spacing-unit--large;
+    padding-bottom: $inuit-base-spacing-unit--large;
+}

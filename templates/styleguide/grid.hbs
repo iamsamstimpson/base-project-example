@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" />
+<html class="no-js" lang="en">
 
 	{{> head meta-title=home.meta-title meta-description=home.meta-description}}
 	
@@ -17,14 +17,19 @@
 	<body class="index">
 
 		{{> browser-upgrade}}
+      
+        <header class="[ page-head ]">
+            {{> navigation}}
+            {{> subnavigation}}
+        </header>
        
         {{> styleguide}}
         
-        <div class="container">
+        <div class="container container--content-offset--both">
           
           <h1>Grid</h1>
           
-          <hr />
+          <hr class="hr-fade--fancy" />
            
             <div class="project-layout">
                 <div class="project-layout__item u-1/1-lap-and-up">
@@ -86,7 +91,7 @@
                 </div>
             </div>
             
-            <hr />
+            <hr class="hr-fade--fancy" />
             
             <div class="project-layout project-layout--rev">
                 <div class="project-layout__item u-1/1-lap-and-up">
@@ -147,9 +152,31 @@
                     <p>1/5</p>
                 </div>
             </div>
+            
+            <div class="project-layout">
+                <div class="project-layout__item u-3/4-lap-and-up">
+                   <h3>Grid in Grid</h3>
+                    <div class="project-layout project-layout--flush">
+                        <div class="project-layout__item u-1/2-lap-and-up ">
+                            <p>1/5</p>
+                        </div>
+                        <div class="project-layout__item u-1/2-lap-and-up ">
+                            <p>1/5</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-layout__item u-1/4-lap-and-up">
+                    <h3>Heading</h3>
+                    <div class="project-layout project-layout--flush">
+                        <div class="project-layout__item u-1/1-lap-and-up ">
+                            <p>1/5</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
         
-        
+        {{> footer}}
 	</body>
 </html>

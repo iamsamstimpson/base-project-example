@@ -1,0 +1,16 @@
+.page-foot {
+    background-color: $lions-dark-grey;
+}
+
+.sub-footer {
+    background-color: darken($lions-dark-grey, 5%);
+}
+
+.sub-footer__inner {
+    padding-top: $inuit-base-spacing-unit--small;
+    padding-bottom: $inuit-base-spacing-unit--small;
+}
+
+.copyright__text {
+    color: white;
+}

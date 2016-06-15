@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" />
+<html class="no-js" lang="en">
 
 	{{> head meta-title=home.meta-title meta-description=home.meta-description}}
-
+	
 	<body class="index">
 
 		{{> browser-upgrade}}
-        
-        {{> styleguide}}
-
-        <header>
-
-			<p>
-				This is the header
-			</p>
-
+      
+        <header class="[ page-head ]">
+            {{> navigation}}
+            {{> subnavigation}}
         </header>
+       
+        {{> styleguide}}
+        
+        <div class="container container--content-offset--both">
+           
+            <h2>Components</h2>
+            
+            <hr class="hr-fade--fancy" />
 
-
-
-		{{> footer}}
-
+            
+            <h5>Supplementary navigation</h5>
+            <h5>Page jumps</h5>
+            <h5>Cards</h5>
+            <h5>Forms / Validation</h5>
+        </div>
+        {{> footer}}
 	</body>
 </html>

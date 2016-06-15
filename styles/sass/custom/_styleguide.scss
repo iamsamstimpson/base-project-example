@@ -1,0 +1,17 @@
+.styleguide {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    background-color: #EBEBEB;
+}
+
+.styleguide ul {
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+}
+
+.styleguide ul a:link,
+.styleguide ul a:visited {
+    color: #2d2d2d;
+}

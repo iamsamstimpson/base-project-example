@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en" />
+<html class="no-js" lang="en">
 
 	{{> head meta-title=home.meta-title meta-description=home.meta-description}}
 	
@@ -8,14 +8,20 @@
 	<body class="index">
 
 		{{> browser-upgrade}}
+      
+        <header class="[ page-head ]">
+            {{> navigation}}
+            {{> subnavigation}}
+        </header>
        
         {{> styleguide}}
         
-        <div class="container">
+        <div class="container container--content-offset--both">
            
             <h2>Tests for common HTML elements</h2>
             
-            <hr />
+            <hr class="hr-fade--fancy" />
+
             
             <h5>PARAGRAPHS <span class="alt">&amp;</span> BOXES</h5>
             
@@ -40,7 +46,7 @@
                 </div>
             </div>
             
-            <hr />
+            <hr class="hr-fade--fancy" />
 
             <h5>LISTS</h5>
             
@@ -102,7 +108,8 @@
                 </div>
             </div>
             
-            <hr />
+            <hr class="hr-fade--fancy" />
+
 
             <h5>HEADINGS</h5>
             <div class="project-layout">
@@ -134,7 +141,8 @@
                 </div>
             </div>
             
-            <hr />
+            <hr class="hr-fade--fancy" />
+
 
             <h5>MISC ELEMENTS</h5>
           
@@ -256,5 +264,6 @@
                 </div>
             </div>
         </div>
+        {{> footer}}
 	</body>
 </html>
