@@ -8,6 +8,8 @@
 
 .nav-bar--secondary {
     background-color: $lions-yellow;
+    background-image:url(/images/section-backgrounds/yell-cl.png);
+    background-attachment: fixed;
 }
 
 .site-nav {
@@ -23,6 +25,7 @@
     display: block;
     padding: $inuit-base-spacing-unit--small;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .nav-bar--main { 
@@ -38,6 +41,8 @@
     .site-nav__link.active {
         background-color: $lions-yellow;
         color: $lions-dark-grey;
+        background-image:url(/images/section-backgrounds/yell-cl.png);
+        background-attachment: fixed;
     }
 }
 

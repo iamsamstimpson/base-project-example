@@ -1,0 +1,45 @@
+.team-member-card {
+    margin-bottom: $inuit-base-spacing-unit--small;
+}
+.team-member-card__inner {
+    
+}
+
+.team-member-plaque {
+    background-color: $lions-yellow;
+}
+.team-member-plaque__inner {
+    padding: $inuit-base-spacing-unit--tiny;
+}
+
+.team-member-bio-sneak {
+
+}
+.team-member-bio-sneak__inner {
+    height: 175px;
+    overflow: hidden;
+    padding: $inuit-base-spacing-unit--tiny;
+    position: relative; // for the fade out relative to position
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        height: 30px;
+        background: linear-gradient(to bottom, transparent 0%, white 100%);
+    }
+}
+
+.team-member-image {
+    width: 100%;
+}
+
+.member-title,
+.member-title {
+    display: block;
+}
+
+.team-member-action-panel {
+    padding: $inuit-base-spacing-unit--tiny;
+}
