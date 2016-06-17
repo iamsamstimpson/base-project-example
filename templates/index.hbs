@@ -4,18 +4,40 @@
 	{{> head meta-title=home.meta-title meta-description=home.meta-description}}
 
 	<body class="index">
-
-
+       
         <header class="[ page-head ]">
             {{> navigation}}
         </header>
         
+        <section class="homepage-section">  
+            Heading / Hero
+        </section>
  
-
-
-
-
-
+        <section class="homepage-section"> 
+            <div class="homepage-section__inner container container--content-offset--both">
+                {{> homepage.festivals}}
+            </div>
+        </section>
+        
+        <section class="homepage-section"> 
+            <div class="homepage-section__inner container container--content-offset--both">
+                {{> homepage.sponsorship}}
+            </div>
+        </section>
+        
+        <section class="homepage-section"> 
+            <div class="homepage-section__inner container container--content-offset--both">
+                <h2>TEAM</h2>
+                {{> homepage.team}}
+            </div>
+        </section>
+        
+        <section class="homepage-section"> 
+            <div class="homepage-section__inner container container--content-offset--both">
+                {{> homepage.contact}}
+            </div>
+        </section>
+ 
         {{> footer}}
 	</body>
 </html>
