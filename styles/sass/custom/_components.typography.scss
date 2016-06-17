@@ -25,6 +25,22 @@ a {
 	color: $lions-dark-grey;
 }
 
+.background-style--yellow {
+    a {
+        color: $lions-dark-grey;
+        text-decoration: underline;
+        &:hover, &:focus {
+            color: lighten($lions-dark-grey, 20%);
+        }
+    }  
+    ::selection {
+        background: $lions-dark-grey;
+        color: $lions-yellow;
+    }
+}
+
+
+
 // hr's
 
 .hr-fade {

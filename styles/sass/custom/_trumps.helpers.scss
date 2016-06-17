@@ -9,7 +9,12 @@
 .float--left    { float:left !important; }
 .float--none    { float:none !important; }
 
-
+/**
+ * Underline
+ */
+.text-underline-style {
+    border-bottom: 1px solid rgba(#fc3,0.5);
+}
 /**
  * Text alignment
  */

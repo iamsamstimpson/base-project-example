@@ -12,6 +12,17 @@ html, body {
 	padding: 0 10px;
 }
 
+.container--small {
+    max-width: 760px;
+}
+.container--medium {
+    max-width: 860px;
+}
+.container--large {
+    max-width: 960px;
+}
+
+
 .container--content-offset--top {
     margin-top: $inuit-base-spacing-unit--large;
 }
