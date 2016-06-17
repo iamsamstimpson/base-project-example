@@ -1,3 +1,14 @@
+// GROUPING
+
+.form-group {
+    @extend .u-mb;
+    label {
+        display: block;
+    }
+}
+
+// INPUT STYLES 
+
 .form-control {
     box-sizing: border-box;
     border-radius: 0;
@@ -34,4 +45,18 @@
 }
 .select--light {
     background-image: url(/images/forms/icon_drop_down_arrow.svg);
+}
+
+// FORM FIELD 
+
+.form-control--focus {
+    border: 2px solid $lions-yellow;
+}
+.form-control--focus.error {
+    @extend .u-mb--;
+    border-color: red;
+}
+
+.validation-text {
+    color: red;
 }
