@@ -1,0 +1,51 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+//.btn {
+//	display:inline-block;
+//	height: 50px;
+//	padding: 0 0;
+//	border: 0;
+//	background-color: $lions-yellow;
+//	color: #fff;
+//	line-height: 50px;
+//	text-decoration: none;
+//	text-align: center;
+//	&:hover,&:focus {
+//		color: #fff;
+//		background-color: lighten($lions-yellow,5%);
+//	}
+//}
+
+//.btn--secondary {
+//	background-color:darken($light-grey,10%);
+//	color:$dark-grey;
+//	&:hover,&:focus {
+//		background-color:darken($light-grey,20%);
+//		color:#fff;
+//	}
+//}
+//
+//.btn--arrow-right {
+//	position:relative;
+//	padding-right:$base-spacing-unit;
+//	&:after {
+//		content:'▸';
+//		position:absolute;
+//		right:0;
+//		top:0;
+//		width:$base-spacing-unit;
+//		height:100%;
+//		color:#fff;
+//		font-size:1.5em;
+//		line-height:50px;
+//		text-align:center;
+//	}
+//	@include media-query(lap-and-up) {
+//		padding-right:$base-spacing-unit--small*3;
+//		&:after {
+//			width:$base-spacing-unit--small*3;
+//		}
+//	}
+//}
