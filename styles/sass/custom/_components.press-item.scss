@@ -1,0 +1,24 @@
+.press-release-item a:link,
+.press-release-item a:visited {
+    display: block;
+    color: inherit;
+}
+.press-release-item a:hover {
+    .press-release-title {
+        text-decoration: underline;
+    }
+}
+.press-release-title,
+.press-release-time-stamp {
+    display: block;
+}
+.press-release-title {
+    @extend .gamma;
+}
+.press-release-time-stamp {
+    @extend .zeta;
+}
+
+.press-release-leader {
+    @extend .zeta;
+}
