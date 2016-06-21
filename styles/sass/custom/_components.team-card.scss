@@ -36,10 +36,17 @@
 }
 
 .member-title,
-.member-title {
+.member-name {
     display: block;
+    font-family: $mondo;
 }
 
 .team-member-action-panel {
     padding: $inuit-base-spacing-unit--tiny;
+}
+.team-member-action-panel a:link,
+.team-member-action-panel a:visited {
+    display: block;
+    color: $lions-dark-grey;
+    font-weight: 700;
 }

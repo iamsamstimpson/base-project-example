@@ -2,6 +2,9 @@
 .press-release-item a:visited {
     display: block;
     color: inherit;
+    .press-release-title {
+        text-decoration: underline;
+    }
 }
 .press-release-item a:hover {
     .press-release-title {
@@ -13,6 +16,7 @@
     display: block;
 }
 .press-release-title {
+    font-family: $mondo;
     @extend .gamma;
 }
 .press-release-time-stamp {

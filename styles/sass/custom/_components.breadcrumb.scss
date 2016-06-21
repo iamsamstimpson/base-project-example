@@ -1,0 +1,27 @@
+.breadcrumb {
+    @extend .u-mt--;
+}
+.breadcrumb__item {
+    position: relative;
+    padding-right: 40px;
+    &:after {
+        content: ">";
+        position: absolute; 
+        right: 13px;
+        top: 2px    ;
+    }
+    &:last-child {
+        &:after {
+            content: "";
+        }   
+    }
+}
+.breadcrumb__item a:link,
+.breadcrumb__item a:visited { 
+    @extend .zeta;
+    color: $lions-light-grey;
+    text-decoration: none;
+}
+.breadcrumb__item a:hover {
+    text-decoration: underline;
+}

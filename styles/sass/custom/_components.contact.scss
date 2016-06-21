@@ -1,0 +1,18 @@
+.address {
+    @extend .u-pb;
+    border-bottom: 1px solid rgba($lions-light-grey, 0.1);
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+// reps
+
+.rep-result {
+    background-color: rgba(255,255,255,0.1);
+}
+.rep-result__inner {
+    @extend .u-p;
+    padding-top: 0;
+    padding-bottom: 0;
+}
