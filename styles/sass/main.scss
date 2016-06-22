@@ -121,7 +121,6 @@ $inuit-enable-btn--pill:                true;
 @import "custom/_components.sections";
 @import "custom/_components.typography";
 
-@import "custom/_components.header";
 @import "custom/_components.footer";
 
 @import "custom/_components.navigation";
@@ -130,11 +129,12 @@ $inuit-enable-btn--pill:                true;
 @import "custom/_components.team-card";
 @import "custom/_components.forms";
 @import "custom/_components.press-item";
+@import "custom/_components.press.article";
 @import "custom/_components.hero";
 @import "custom/_components.breadcrumb";
 @import "custom/_components.festival-icons";
 @import "custom/_components.contact";
-@import "custom/_components.festival-sponsors.scss";
+@import "custom/_components.festival-sponsors";
 
 ///*------------------------------------*\
 //    #TRUMPS

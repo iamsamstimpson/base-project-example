@@ -1,9 +1,8 @@
-.festival-icon-list__item {
-    @extend .u-pl-;
-    @extend .u-pr-;
-}
 .festival-icon-list__item a:link,
 .festival-icon-list__item a:visited {
+    display: block;
     @extend .alpha;
+    @extend .u-pl-;
+    @extend .u-pr-;
     text-decoration: none;
 }
